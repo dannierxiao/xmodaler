@@ -14,6 +14,8 @@ from xmodaler.config import get_cfg
 from xmodaler.engine import DefaultTrainer, default_argument_parser, default_setup, hooks, launch, build_engine
 from xmodaler.modeling import add_config
 
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+
 def setup(args):
     """
     Create configs and perform basic setups.
